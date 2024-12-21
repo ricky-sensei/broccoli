@@ -5,12 +5,13 @@ from update_path import update_path
 
 update_path()
 
-# detectディレクトリがあった場合は削除して再作成
+# detectディレクトリからpredictトナのついたディレクトリを削除
 detect_dir = "runs/detect"
 if os.path.exists(detect_dir):
     for dir in os.listdir(detect_dir):
         if "predict" in dir:
             shutil.rmtree(f"{detect_dir}/{dir}")
+# resultsディレクトリを削除して作り直す
 if os.path.exists("results"):
     shutil.rmtree("results")
     os.makedirs("results")
