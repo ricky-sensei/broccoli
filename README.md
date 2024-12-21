@@ -12,4 +12,4 @@ train.py
 ### 推論
 ・inference_dataフォルダに画像をいれる
 
-・inference.pyを実行。実行結果はruns/detect/predict(number) フォルダに格納される。
+・inference.pyを実行。実行結果はresultsフォルダに格納される
